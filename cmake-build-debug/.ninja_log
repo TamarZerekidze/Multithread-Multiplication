@@ -1,2 +1,19 @@
 # ninja log v6
-2	44	7485325085639339	CMakeFiles/Multithread_Multiplication.dir/Coordinator.cpp.obj	3b1eaba843c223fe
+34	1929	7487086069446496	CMakeFiles/Multithread_Multiplication.dir/Coordinator.cpp.obj	b7bef922e02905b7
+22	415	7485625240662823	CMakeFiles/Multithread_Multiplication.dir/Stat.cpp.obj	d05d2439b30a495f
+5	448	7485626114099725	CMakeFiles/Multithread_Multiplication.dir/DatabaseConnection.cpp.obj	60e17e6f6724412c
+1929	2246	7487086088394081	Multithread_Multiplication.exe	12267cad729c7137
+10	568	7485660234132901	CMakeFiles/Multithread_Multiplication.dir/StatsDAO.cpp.obj	2c89c2db2f990690
+12	4829	7485625240563014	CMakeFiles/Multithread_Multiplication.dir/sqlite/sqlite3.c.obj	da439974f1f83379
+15	926	7487096577877161	CMakeFiles/Multithread_Multiplication.dir/Karatsuba.cpp.obj	6380dac57032b198
+12	1004	7487096577837139	CMakeFiles/Multithread_Multiplication.dir/Coordinator.cpp.obj	b7bef922e02905b7
+1004	1166	7487096587757258	Multithread_Multiplication.exe	9022605dfc042ccd
+5	866	7487103515772210	CMakeFiles/Multithread_Multiplication.dir/Karatsuba.cpp.obj	6380dac57032b198
+866	1016	7487103524382334	Multithread_Multiplication.exe	9022605dfc042ccd
+5	1131	7487104351188956	CMakeFiles/Multithread_Multiplication.dir/Coordinator.cpp.obj	b7bef922e02905b7
+1131	1282	7487104362449477	Multithread_Multiplication.exe	9022605dfc042ccd
+5	1061	7487107713616388	CMakeFiles/Multithread_Multiplication.dir/Coordinator.cpp.obj	b7bef922e02905b7
+1062	1213	7487107724186667	Multithread_Multiplication.exe	9022605dfc042ccd
+9	921	7487193063036143	CMakeFiles/Multithread_Multiplication.dir/Karatsuba.cpp.obj	6380dac57032b198
+5	1026	7487193062996138	CMakeFiles/Multithread_Multiplication.dir/Coordinator.cpp.obj	b7bef922e02905b7
+1026	1184	7487193073206146	Multithread_Multiplication.exe	9022605dfc042ccd

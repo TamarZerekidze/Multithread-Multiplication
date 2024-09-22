@@ -49,24 +49,51 @@ cmake_ninja_workdir = C$:/Users/takusi/CLionProjects/Multithread-Multiplication/
 
 build cmake_object_order_depends_target_Multithread_Multiplication: phony || .
 
+build CMakeFiles/Multithread_Multiplication.dir/sqlite/sqlite3.c.obj: C_COMPILER__Multithread_Multiplication_unscanned_Debug C$:/Users/takusi/CLionProjects/Multithread-Multiplication/sqlite/sqlite3.c || cmake_object_order_depends_target_Multithread_Multiplication
+  DEFINES = -DSQLITE_THREADSAFE=1
+  DEP_FILE = CMakeFiles\Multithread_Multiplication.dir\sqlite\sqlite3.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/takusi/CLionProjects/Multithread-Multiplication/sqlite
+  OBJECT_DIR = CMakeFiles\Multithread_Multiplication.dir
+  OBJECT_FILE_DIR = CMakeFiles\Multithread_Multiplication.dir\sqlite
+
 build CMakeFiles/Multithread_Multiplication.dir/Coordinator.cpp.obj: CXX_COMPILER__Multithread_Multiplication_unscanned_Debug C$:/Users/takusi/CLionProjects/Multithread-Multiplication/Coordinator.cpp || cmake_object_order_depends_target_Multithread_Multiplication
+  DEFINES = -DSQLITE_THREADSAFE=1
   DEP_FILE = CMakeFiles\Multithread_Multiplication.dir\Coordinator.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/takusi/CLionProjects/Multithread-Multiplication/.
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/takusi/CLionProjects/Multithread-Multiplication/sqlite
   OBJECT_DIR = CMakeFiles\Multithread_Multiplication.dir
   OBJECT_FILE_DIR = CMakeFiles\Multithread_Multiplication.dir
 
 build CMakeFiles/Multithread_Multiplication.dir/StatsDAO.cpp.obj: CXX_COMPILER__Multithread_Multiplication_unscanned_Debug C$:/Users/takusi/CLionProjects/Multithread-Multiplication/StatsDAO.cpp || cmake_object_order_depends_target_Multithread_Multiplication
+  DEFINES = -DSQLITE_THREADSAFE=1
   DEP_FILE = CMakeFiles\Multithread_Multiplication.dir\StatsDAO.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/takusi/CLionProjects/Multithread-Multiplication/.
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/takusi/CLionProjects/Multithread-Multiplication/sqlite
   OBJECT_DIR = CMakeFiles\Multithread_Multiplication.dir
   OBJECT_FILE_DIR = CMakeFiles\Multithread_Multiplication.dir
 
 build CMakeFiles/Multithread_Multiplication.dir/Stat.cpp.obj: CXX_COMPILER__Multithread_Multiplication_unscanned_Debug C$:/Users/takusi/CLionProjects/Multithread-Multiplication/Stat.cpp || cmake_object_order_depends_target_Multithread_Multiplication
+  DEFINES = -DSQLITE_THREADSAFE=1
   DEP_FILE = CMakeFiles\Multithread_Multiplication.dir\Stat.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/takusi/CLionProjects/Multithread-Multiplication/.
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/takusi/CLionProjects/Multithread-Multiplication/sqlite
+  OBJECT_DIR = CMakeFiles\Multithread_Multiplication.dir
+  OBJECT_FILE_DIR = CMakeFiles\Multithread_Multiplication.dir
+
+build CMakeFiles/Multithread_Multiplication.dir/DatabaseConnection.cpp.obj: CXX_COMPILER__Multithread_Multiplication_unscanned_Debug C$:/Users/takusi/CLionProjects/Multithread-Multiplication/DatabaseConnection.cpp || cmake_object_order_depends_target_Multithread_Multiplication
+  DEFINES = -DSQLITE_THREADSAFE=1
+  DEP_FILE = CMakeFiles\Multithread_Multiplication.dir\DatabaseConnection.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/takusi/CLionProjects/Multithread-Multiplication/sqlite
+  OBJECT_DIR = CMakeFiles\Multithread_Multiplication.dir
+  OBJECT_FILE_DIR = CMakeFiles\Multithread_Multiplication.dir
+
+build CMakeFiles/Multithread_Multiplication.dir/Karatsuba.cpp.obj: CXX_COMPILER__Multithread_Multiplication_unscanned_Debug C$:/Users/takusi/CLionProjects/Multithread-Multiplication/Karatsuba.cpp || cmake_object_order_depends_target_Multithread_Multiplication
+  DEFINES = -DSQLITE_THREADSAFE=1
+  DEP_FILE = CMakeFiles\Multithread_Multiplication.dir\Karatsuba.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/takusi/CLionProjects/Multithread-Multiplication/sqlite
   OBJECT_DIR = CMakeFiles\Multithread_Multiplication.dir
   OBJECT_FILE_DIR = CMakeFiles\Multithread_Multiplication.dir
 
@@ -78,7 +105,7 @@ build CMakeFiles/Multithread_Multiplication.dir/Stat.cpp.obj: CXX_COMPILER__Mult
 #############################################
 # Link the executable Multithread_Multiplication.exe
 
-build Multithread_Multiplication.exe: CXX_EXECUTABLE_LINKER__Multithread_Multiplication_Debug CMakeFiles/Multithread_Multiplication.dir/Coordinator.cpp.obj CMakeFiles/Multithread_Multiplication.dir/StatsDAO.cpp.obj CMakeFiles/Multithread_Multiplication.dir/Stat.cpp.obj
+build Multithread_Multiplication.exe: CXX_EXECUTABLE_LINKER__Multithread_Multiplication_Debug CMakeFiles/Multithread_Multiplication.dir/sqlite/sqlite3.c.obj CMakeFiles/Multithread_Multiplication.dir/Coordinator.cpp.obj CMakeFiles/Multithread_Multiplication.dir/StatsDAO.cpp.obj CMakeFiles/Multithread_Multiplication.dir/Stat.cpp.obj CMakeFiles/Multithread_Multiplication.dir/DatabaseConnection.cpp.obj CMakeFiles/Multithread_Multiplication.dir/Karatsuba.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Multithread_Multiplication.dir

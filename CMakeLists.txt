@@ -1,14 +1,17 @@
 cmake_minimum_required(VERSION 3.29)
 project(Multithread_Multiplication)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 23)
+include_directories(sqlite)
+add_compile_definitions(SQLITE_THREADSAFE=1)
 
-include_directories(.)
-
-add_executable(Multithread_Multiplication
-    Coordinator.cpp
-    Coordinator.h
+add_executable(Multithread_Multiplication sqlite/sqlite3.h sqlite/sqlite3.c
+        Coordinator.cpp
+        Coordinator.h
         StatsDAO.h
         StatsDAO.cpp
         Stat.h
-        Stat.cpp)
+        Stat.cpp
+        DatabaseConnection.cpp
+        Karatsuba.cpp
+        Karatsuba.h)
