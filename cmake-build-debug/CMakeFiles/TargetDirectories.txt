@@ -1,3 +1,0 @@
-C:/Users/takusi/CLionProjects/Multithread-Multiplication/cmake-build-debug/CMakeFiles/Multithread_Multiplication.dir
-C:/Users/takusi/CLionProjects/Multithread-Multiplication/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/takusi/CLionProjects/Multithread-Multiplication/cmake-build-debug/CMakeFiles/rebuild_cache.dir
