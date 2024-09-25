@@ -6,12 +6,12 @@ include_directories(sqlite)
 add_compile_definitions(SQLITE_THREADSAFE=1)
 
 add_executable(Multithread_Multiplication sqlite/sqlite3.h sqlite/sqlite3.c
-        Coordinator.cpp
-        Coordinator.h
-        StatsDAO.h
-        StatsDAO.cpp
-        Stat.h
-        Stat.cpp
-        DatabaseConnection.cpp
-        Karatsuba.cpp
-        Karatsuba.h)
+        src/Coordinator.cpp
+        src/Coordinator.h
+        src/StatsDAO.h
+        src/StatsDAO.cpp
+        src/Stat.h
+        src/Stat.cpp
+        src/DatabaseConnection.cpp
+        src/Karatsuba.cpp
+        src/Karatsuba.h)

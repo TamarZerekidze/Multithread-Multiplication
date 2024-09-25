@@ -2,6 +2,18 @@
 #include <string>
 #include <ctime>
 
+/**
+ * @class Stat
+ * @brief Stores details of a multiplication operation.
+ *
+ * This class holds information about two numbers involved in multiplication, the result,
+ * and the timing details (start, finish, and elapsed time).
+ *
+ * Public Methods:
+ * - Getters and setters for the numbers, result, start time, finish time, and elapsed time.
+ * - getId(), setId(): Accessor and mutator for the unique ID of the Stat object.
+ */
+
 class Stat {
 private:
     long long id = -1;

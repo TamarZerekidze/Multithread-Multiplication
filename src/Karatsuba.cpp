@@ -1,6 +1,5 @@
 #include <iostream>
 #include <chrono>
-#include <bits/ranges_algo.h>
 #include "Karatsuba.h"
 
 
@@ -8,10 +7,8 @@
 std::string Karatsuba::add(const std::string &a, const std::string &b) {
     std::string result;
     int carry = 0;
-
     auto itA = a.rbegin();
     auto itB = b.rbegin();
-
     while (itA != a.rend() || itB != b.rend() || carry) {
         int sum = carry;
         if (itA != a.rend()) {
@@ -25,7 +22,6 @@ std::string Karatsuba::add(const std::string &a, const std::string &b) {
         result.push_back(sum % 10 + '0');
         carry = sum / 10;
     }
-
     std::reverse(result.begin(), result.end());
     return result;
 }
@@ -34,10 +30,8 @@ std::string Karatsuba::add(const std::string &a, const std::string &b) {
 std::string Karatsuba::subtract(const std::string &a, const std::string &b) {
     std::string result;
     int carry = 0;
-
     auto itA = a.rbegin();
     auto itB = b.rbegin();
-
     while (itA != a.rend()) {
         int diff = *itA - '0' - carry;
         if (itB != b.rend()) {
@@ -53,12 +47,10 @@ std::string Karatsuba::subtract(const std::string &a, const std::string &b) {
         result.push_back(diff + '0');
         ++itA;
     }
-
     // Remove leading zeros
     while (result.size() > 1 && result.back() == '0') {
         result.pop_back();
     }
-
     std::reverse(result.begin(), result.end());
     return result.empty() ? "0" : result;
 }
@@ -92,7 +84,7 @@ std::string Karatsuba::karatsuba(const std::string &num1, const std::string &num
     std::string c = num2Padded.substr(0, n - half);
     std::string d = num2Padded.substr(n - half);
 
-    // 3 recursive calls
+    // 3 recursive calls of multiplication
     std::string ac = karatsuba(a, c);
     std::string bd = karatsuba(b, d);
     std::string ab_cd = karatsuba(add(a, b), add(c, d));
@@ -109,6 +101,5 @@ std::string Karatsuba::karatsuba(const std::string &num1, const std::string &num
     while (res.size() > 1 && res[0] == '0') {
         res.erase(res.begin());
     }
-
     return res;
 }
